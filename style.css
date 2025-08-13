@@ -9,18 +9,21 @@ body {
 }
 
 header {
-  font-family: Roboto, "Josefin Sans", sans-serif;
-  background-color: #1c2a48;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, "Josefin Sans", sans-serif;
+  background-color: #7d8d86;
   color: white;
   padding: 20px 0;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 15px;
 }
 
 header h1 {
   margin: 0;
   font-size: 2em;
+  border-radius: 15px;
 }
+
 
 nav {
   margin-top: 10px;
@@ -67,7 +70,7 @@ nav a:hover {
 }
 
 .alternativa {
-  background-color: #007bff;
+  background-color: #2677c7;
   color: white;
   border: none;
   padding: 10px 30px;
@@ -91,6 +94,7 @@ main {
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    
 }
 
 main h2 {
@@ -104,6 +108,8 @@ main blockquote {
   line-height: 1.6;
   margin-bottom: 16px;
   text-align: justify;
+  font-weight: bold;
+  
 }
 
 img {
@@ -115,8 +121,9 @@ img {
 
 footer {
   text-align: center;
-  background-color: #1c2a48;
+  background-color: #7d8d86;
   color: white;
   padding: 15px 0;
   margin-top: 40px;
+  border-radius: 15px;
 }
