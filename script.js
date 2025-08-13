@@ -23,6 +23,7 @@ function mostrarResultado() {
 
 function reiniciar() {
     let mensagem = '';
+    pontuacaoPhishing = 0;
     localDoResultado.innerHTML = mensagem;
 }
 
