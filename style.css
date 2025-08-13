@@ -30,7 +30,7 @@ nav {
 }
 
 nav a {
-  color: #a6c8ff;
+  color: #1c2a48;
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
@@ -39,6 +39,17 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+.banner {
+  width: 800;
+  height: 200;
+}
+
+.tituloPrincipal{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
 .tituloDoVerdadeiroOuFalso{
   display: flex;
   align-items: center;
