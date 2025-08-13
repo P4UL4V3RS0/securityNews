@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Golpe de Phishing clona site de banco</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Notícias de Segurança</h1>
+    <h1>Security News</h1>
     <nav>
       <a href="index.html">Início</a> |
       <a href="phishing.html">Phishing</a> |
@@ -20,10 +20,8 @@
     <article>
       <h2>Golpe de Phishing clona site de banco e faz vítimas em todo o Brasil</h2>
       <p><strong>Atualizado em 06/08/2025 — 14h21 | São Paulo</strong></p>
-      <pstyle= text-align: justify;>Phishing, smishing e vishing são tipos de ataques cibernéticos que visam roubar informações pessoais, financeiras ou sensíveis dos usuários. 
-        Esses golpes exploram a confiança das vítimas por meio de diferentes canais de comunicação — como e-mail, mensagem de texto e chamada telefônica —, com criminosos se passando por empresas legítimas para atrair internautas, além de oferecer supostos benefícios como promoções e brindes. Cada golpe tem uma abordagem diferente e conhecer essas particularidades é útil para se proteger das tentativas de fraude. A seguir, entenda como o phishing, smishing e vishing funcionam e saiba como evitá-los.</p>
-      <img src="https://thumbs.dreamstime.com/b/sinal-de-aviso-seguran%C3%A7a-line-que-representa-phishing-com-credenciais-e-interface-login-conectados-o-mostra-os-campos-senha-370651629.jpg"
-           alt="Exemplo de phishing digital" />
+      <p>Phishing, smishing e vishing são tipos de ataques cibernéticos que visam roubar informações pessoais, financeiras ou sensíveis dos usuários. Esses golpes exploram a confiança das vítimas por meio de diferentes canais de comunicação — como e-mail, mensagem de texto e chamada telefônica —, com criminosos se passando por empresas legítimas para atrair internautas, além de oferecer supostos benefícios como promoções e brindes. Cada golpe tem uma abordagem diferente e conhecer essas particularidades é útil para se proteger das tentativas de fraude. A seguir, entenda como o phishing, smishing e vishing funcionam e saiba como evitá-los.</p>
+      <img src="./assets/phishing.jpg" alt="Tipos de phishing">
       <p>Um novo golpe de <strong>phishing</strong> está fazendo vítimas no Brasil. Cibercriminosos estão usando réplicas de sites bancários para roubar dados sensíveis.</p>
       <p>A fraude é disseminada por e-mails falsos que simulam cobranças ou alertas. Ao clicar, a vítima acessa uma página idêntica ao site real do banco.</p>
       <p>“As vítimas acham que estão seguras, mas estão entregando seus dados aos golpistas”, disse Carlos Monteiro, perito digital.</p>
@@ -34,10 +32,37 @@
         <li>Use autenticação de dois fatores sempre que possível.</li>
       </ul>
     </article>
+    <section class="quizSobrePhishing">
+      <h2>Quiz - Phishing</h2>
+      <p>Responda e teste seus conhecimentos sobre esse golpe.</p>
+      <ol>
+        <strong><li>O que é phishing?</li></strong>
+        <section class="alternativas">
+          <ol type="A">
+            <button class="alternativa" onclick="adicionarPontos(0)"><li>Um software de proteção antivírus</li></button> 
+            <button class="alternativa" onclick="adicionarPontos(1)"><li>Um ataque que engana usuários para obter informações sensíveis</li></button>
+            <button class="alternativa" onclick="adicionarPontos(0)"> <li>Um tipo de criptografia</li></button>
+            <button class="alternativa" onclick="adicionarPontos(0)"><li>Um protocolo de rede seguro</li></button>
+          </ol>
+        </section>
+        <strong><li>Qual é a melhor prática para criar uma senha segura?</li></strong>
+        <section class="alternativas">
+          <ol type="A">
+            <button class="alternativa" onclick="adicionarPontos(0)"><li>Usar a mesma senha para todos os sites</li></button> 
+            <button class="alternativa" onclick="adicionarPontos(1)"><li>Combinar letras, números e caracteres especiais</li></button>
+            <button class="alternativa" onclick="adicionarPontos(0)"><li>Usar seu nome e data de nascimento</li></button>
+            <button class="alternativa" onclick="adicionarPontos(0)"><li>Escrever a senha em um papel</li></button>
+          </ol>
+        </section>
+        <button class="botoesFinais" onclick="mostrarResultado()">Ver meu resultado</button>
+        <button class="botoesFinais" onclick="reiniciar()"> Reiniciar quiz</button>
+        <h3 id="resultado"></h3>
+      </ol>
+    </section>
   </main>
-
   <footer>
-    <p>&copy; 2025 - Projeto de Segurança Computacional</p>
+     <p>&copy; 2025 Security News. Todos os direitos reservados.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

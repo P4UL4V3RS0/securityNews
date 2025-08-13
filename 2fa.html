@@ -2,48 +2,79 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Autenticação de Dois Fatores evita ataque</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-    <h1>Notícias de Segurança</h1>
+    <h1>Security News</h1>
     <nav>
-      <ul>
-        <li>
-        <a href="index.html">Início</a> |
-        <a href="phishing.html">Phishing</a> |
-        <a href="2fa.html">Autenticação 2FA</a>
-        </li>
-      </ul>
+      <a href="index.html">Início</a> |
+      <a href="phishing.html">Phishing</a>|
+      <a href="2fa.html">Autenticação 2FA</a>
     </nav>
   </header>
 
   <main>
     <article>
       <h2>Autenticação de Dois Fatores evita ataque a rede de universidade federal</h2>
+
       <p><strong>Atualizado em 06/08/2025 — 13h10 | Belo Horizonte</strong></p>
-      <img src="MFA-vs-2FA.png" alt="" />
+
+      <img src="./assets/MFA-vs-2FA.png" alt="" />
+
       <p>Uma tentativa de ataque cibernético foi frustrada na UFMG graças à <strong>autenticação de dois fatores
           (2FA)</strong>.</p>
+
       <p>Mesmo com senhas obtidas via e-mails falsos, os criminosos não conseguiram avançar sem o código temporário
         enviado ao celular dos usuários.</p>
-      <blockquote>
-        “Sem o segundo fator de autenticação, o prejuízo poderia ter sido enorme”, disse Fernanda Lima, chefe de
-        segurança da informação da UFMG.
-      </blockquote>
+
+      <blockquote>“Sem o segundo fator de autenticação, o prejuízo poderia ter sido enorme”, disse Fernanda Lima, chefe de segurança da informação da UFMG. </blockquote>
+
       <h3>O que é 2FA?</h3>
-      <p>É um método de segurança que exige dois tipos de autenticação: algo que o usuário <strong>sabe</strong> (senha)
-        e algo que ele <strong>possui</strong> (celular, token, app).</p>
+
+      <p>É um método de segurança que exige dois tipos de autenticação: algo que o usuário <strong>sabe</strong> (senha) e algo que ele <strong>possui</strong> (celular, token, app).</p>
     </article>
+
+    <div class="tituloDoVerdadeiroOuFalso">
+      <img class="imagemTituloDoVerdadeiroOuFalso" src="./assets/mitoOuVerdade2.png" alt="">
+
+      <h2> Verdadeiro ou Falso </h2>
+    </div>  
+    
+    <p>Para seguintes afirmações responda verdadeiro ou falso:</p>
+
+    <ol class="afirmações">
+      <div  class="afirmação-1">
+        
+        <strong><li>A 2FA deve ser usada somente por bancos ou empresas grandes.</li></strong>
+
+        <button class="verdadeiro" onclick="verificarResposta('incorreto','qualquer conta online (e-mail, redes sociais, jogos, armazenamento em nuvem) pode e deve usar 2FA para proteção.','resposta1')">Verdadeiro</button>
+
+        <button class="falso" onclick="verificarResposta('correto','isso está correto','resposta1')">Falso</button>
+
+        <h3 class="limpa" id="resposta1"></h3>
+      </div>
+
+      <div class="afirmação-2">
+        <strong><li>A 2FA deixa o login muito complicado.</li></strong>
+
+        <button class="verdadeiro" onclick="verificarResposta('incorreto','apesar de adicionar alguns segundos,na prática é rápido, especialmente com apps autenticadores ou biometria.','resposta2')">Verdadeiro</button>
+
+        <button class="falso" onclick="verificarResposta('correto','isso está correto','resposta2')">Falso</button>
+
+        <h3 class="limpa" id="resposta2"></h3>
+      </div>
+      
+    </ol>
+    <button class="botoesFinais" onclick="limpar()">Reiniciar</button>
   </main>
-
   <footer>
-    <p>&copy; 2025 - Projeto de Segurança Computacional</p>
+     <p>&copy; 2025 Security News. Todos os direitos reservados.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
-
 </html>
