@@ -42,10 +42,32 @@ nav a:hover {
   text-align: center;
   justify-content: center;
 }
+
 .imagemTituloDoVerdadeiroOuFalso{
   margin: 0px 20px 0px 0px;
 }
-.verdadeiro{
+
+.verdadeiro:hover { 
+  background-color: rgb(0, 86, 0);
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.falso:hover {
+  background-color: rgb(167, 0, 0);
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.verdadeiro {
   background-color: green;
   color: white;
   border: none;
@@ -53,6 +75,7 @@ nav a:hover {
   border-radius: 5px;
   margin: 5px;
 }
+
 .falso{
   background-color: red;
   color: white;
@@ -61,6 +84,7 @@ nav a:hover {
   border-radius: 5px;
   margin: 5px;
 }
+
 .alternativas {
   display: flex;
   gap: 10px;
@@ -73,6 +97,26 @@ nav a:hover {
   padding: 10px 30px;
   border-radius: 5px;
   margin: 5px;
+}
+
+.alternativa:hover {
+  background-color: #004b9b;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.botoesFinais:hover { 
+  background-color: #080e1b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 30px 0 0 0;
+  cursor: pointer;
 }
 
 .botoesFinais { 
