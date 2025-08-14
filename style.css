@@ -39,6 +39,7 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
 .banner {
   width: 800;
   height: 200;
@@ -55,6 +56,40 @@ nav a:hover {
   align-items: center;
   text-align: center;
   justify-content: center;
+}
+
+.menbros{
+  background-color: #b0bdb8;
+  border-radius: 15px;
+}
+
+.tituloMenbros {
+  text-align: center;
+}
+
+.divMenbros{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.menbro{
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 225px;
+  align-items: center;
+  margin: 0 50px;
+  padding: 10px;
+}
+
+.imagemMembro{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .imagemTituloDoVerdadeiroOuFalso{
